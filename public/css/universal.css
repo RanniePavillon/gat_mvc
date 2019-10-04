@@ -1,0 +1,58 @@
+/* Universal */
+.tc {
+	text-align: center;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tr {
+	text-align: right;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.cb {
+	clear: both;
+}
+
+.fwb {
+	font-weight: bold;
+}
+
+.tdu {
+	text-decoration: underline;
+}
+
+.fsi {
+	font-style: italic;
+}
+
+.ttc {
+	text-transform: capitalize;
+}
+
+.ttu {
+	text-transform: uppercase;
+}
+
+.ttl {
+	text-transform: lowercase;
+}
+
+.fillScreen {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(1, 1, 1, 0.41);
+}
