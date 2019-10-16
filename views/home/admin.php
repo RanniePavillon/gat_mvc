@@ -58,14 +58,13 @@
 				var form = $(this).serialize();
 				$.post(URL+"user/adminlogin",form)
 				.done(function(returnData){
-					if(returnData==1){
-						window.location.href = URL+"admin/reports";
-					}
-					else if(returnData==2){
+					if(returnData==2){
 						$('.snackbar').addClass('show').text('Wrong Password');
 						setTimeout(function(){
 							$('.snackbar').removeClass('show');
-						}, 3000)
+						}, 1000)
+					} else {
+						window.location.href = URL+"admin/reports";
 					}
 				})	
 

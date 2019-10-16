@@ -19,7 +19,8 @@ class Admin_model extends Model
 		echo 1;
 	}
 	public function getData(){
-		return DAOFactory::getTblUserDAO()->queryAll();
+		return  DAOFactory::getTblUserDAO()->queryAll();
+		// echo json_encode($data);
 	}
 	public function score(){
 		return DAOFactory::getTblScoreDAO()->score();

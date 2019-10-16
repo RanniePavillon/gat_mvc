@@ -27,10 +27,10 @@
 						<tbody>
 							<?php foreach ($data as $each): ?>
 								<tr>	
-									<td><?= $each->name ?></td>
-									<td><?= $each->email ?></td>
-									<td><?= $each->username ?></td>
-									<td><?= $each->dateCreated ?></td>
+									<td><?= $each->firstName; ?></td>
+									<td><?= $each->emailAddress; ?></td>
+									<td><?= $each->firstName; ?></td>
+									<td><?= $each->dateCreated; ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</tbody>

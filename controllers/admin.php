@@ -10,11 +10,14 @@ class Admin extends Controller
 
 	public function index()
 	{
+		// $check = Session::getSession('user')['username'];
+		// echo $check;
+		// return; 
 		if(Session::getSession('user')['username']!='admin'){
 			Session::destroy();
 			header('location: '.URL.'admin');
 		} else {
-			$check = DAOFactory::getTblUserDAO()->queryByUsername(Session::getSession('user')['username']);
+			$check = DAOFactory::getTblAdminDAO()->queryByUsername(Session::getSession('user')['username']);
 			if(empty($check)){
 				Session::destroy();
 				header('location: '.URL);

@@ -1,6 +1,6 @@
 <?php
 	define('SERVERTYPE','local');
-	define('URL',SERVERTYPE == 'local' ? '/jobaccou_gat_recruitment/' : '');
+	define('URL',SERVERTYPE == 'local' ? '/dev_growth_adaptability_recruitment/' : '/dev_growth_adaptability_recruitment/');
 	
 	/*DATABASE CONNECTION*/
 

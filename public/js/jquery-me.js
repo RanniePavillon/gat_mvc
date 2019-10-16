@@ -56,6 +56,14 @@ $(function(){
     		}) 
     	);
 	})
+	$('.txtAnswer').blur(function(){
+		var $th = $(this);
+    	$th.val( 
+    		$th.val().replace(/[^1-5]/g, function(str) { 
+    			 return ''; 
+    		}) 
+    	);
+	})
 	$('#answerForm').submit(function(){
 		var form = $(this).serialize();
 
